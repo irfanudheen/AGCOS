@@ -42,7 +42,7 @@
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
-    <div class="preloader">
+    <div class="preloader" id="preloader">
         <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
     </div>
     <!-- /.preloader -->
@@ -59,11 +59,11 @@
                         <li class="">
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="scrollToLink"><a href="Index.html#about">About</a></li>
-                        <li class="scrollToLink"><a href="Index.html#services">Services</a></li>
-                        <!-- <li class="scrollToLink"><a href="Index.html#project">Project</a></li> -->
-                        <li class="scrollToLink"><a href="Index.html#testimonials">Testimonials</a></li>
-                        <li class="scrollToLink"><a href="Index.html#blog">Blog</a></li>
+                        <li class="scrollToLink"><a href="index.html#about">About</a></li>
+                        <li class="scrollToLink"><a href="index.html#services">Services</a></li>
+                        <!-- <li class="scrollToLink"><a href="index.html#project">Project</a></li> -->
+                        <li class="scrollToLink"><a href="index.html#testimonials">Testimonials</a></li>
+                        <li class="scrollToLink"><a href="index.html#blog">Blog</a></li>
                         <li class="scrollToLink"><a href="branches.html">Branches</a></li>
                         <!-- <li class="scrollToLink"><a href="gallery.html">Gallery</a></li> -->
                     </ul>
@@ -163,7 +163,7 @@
                                     </li>
                                     <li>
                                         <span class="footer-widget__info__icon"><i class="icofont-location-pin"></i></span>
-                                        AGCOS MULTI-STATE AGRICULTURAL PRODUCER'S PROCESSING AND MERKETNG CO-OPERATIVE SOCIETY LTD.
+                                        AGCOS MULTI-STATE AGRICULTURAL PRODUCER'S PROCESSING AND MARKETING CO-OPERATIVE SOCIETY LTD.
                                     </li>
                                     <li>
                                         <span class="footer-widget__info__icon"><i class="icofont-phone"></i></span>
@@ -190,7 +190,7 @@
                                 <ul class="list-unstyled footer-widget__links">
                                     <li><a href="index.html#services">Fixed Contributions</a></li>
                                     <li><a href="index.html#services">Recurring Contributions</a></li>
-                                    <li><a href="index.html#services">Savings</a></li>
+                                    <li><a href="index.html#services">Contributions</a></li>
                                     <li><a href="index.html#services">Loans</a></li>
                                     <li><a href="index.html#services">Gold Loans</a></li>
                                     <li><a href="index.html#services">Recurring Deposit Cum Loan</a></li>
@@ -289,7 +289,7 @@
                 <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" alt="Careox HTML" width="147"></a>
             </div><!-- /.sidebar-one__logo-box -->
             <p class="sidebar-one__text">
-               AGCOS MULTI-STATE AGRICULTURAL PRODUCER'S PROCESSING AND MERKETNG CO-OPERATIVE SOCIETY LTD.<br>
+               AGCOS MULTI-STATE AGRICULTURAL PRODUCER'S PROCESSING AND MARKETING CO-OPERATIVE SOCIETY LTD.<br>
                REG NO . MSCS/CR/911/2013 
             </p>
             <h4 class="sidebar-one__title">Contact Info:</h4>
@@ -318,7 +318,6 @@
         </svg>
     </a>
     <!-- back-to-top-end -->
-
 
     <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -349,13 +348,7 @@
     <script src="assets/vendors/gsap/AGCOS-split.js"></script>
     <!-- template js -->
     <script src="assets/js/AGCOS.js"></script>
-    <script>
-    window.addEventListener("load", function () {
-        setTimeout(function () {
-        document.querySelector(".preloader").classList.add("hidden");
-        }, 3000); // 3 sec delay before return to main site
-    });
-    </script>
+  
 </body>
 
 

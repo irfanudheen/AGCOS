@@ -569,7 +569,7 @@ h6 {
   font-family: "azino-icon";
 }
 
-.preloader {
+/* .preloader {
   position: fixed;
   background-color: var(--AGCOS-black, #122f2a);
   background-position: center center;
@@ -601,6 +601,26 @@ h6 {
   background-size: 60px auto;
   width: 100%;
   height: 100%;
+} */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* or black */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease;
+}
+.preloader__image {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* scroll to top */

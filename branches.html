@@ -38,13 +38,23 @@
 </head>
 
 <body class="custom-cursor">
-
+       <!-- preloader begin -->
+<div id="mlnd-loader">
+  <div class="mlnd-content">
+    <img src="assets/images/loader.png" alt="AGCOS" class="mlnd-logo" />
+    <div class="mlnd-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
-    <div class="preloader" id="preloader">
+    <!-- <div class="preloader" id="preloader">
         <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
-    </div>
+    </div> -->
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header main-header--two sticky-header sticky-header--one-page">
@@ -562,7 +572,13 @@
         </svg>
     </a>
     <!-- back-to-top-end -->
-
+<div id="whatsapp-chat">
+  <a href="https://wa.me/919072175404?text=Hello%AGCOS%20MSCS%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+     target="_blank">
+    <img src="assets/images/whatsapp.png" alt="Chat on WhatsApp">
+    <span>Chat with us</span>
+  </a>
+</div>
 
     <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -593,6 +609,14 @@
     <script src="assets/vendors/gsap/AGCOS-split.js"></script>
     <!-- template js -->
     <script src="assets/js/AGCOS.js"></script>
-    
+    <script>
+   window.addEventListener("load", function(){
+        setTimeout(function(){
+            const loader = document.getElementById("mlnd-loader");
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+        }, 2000); // stays 2 seconds after page load
+        });
+    </script>
 </body>
 </html>
